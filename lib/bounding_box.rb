@@ -17,10 +17,6 @@ class BoundingBox
   end
 
   def contains_point?(x, y)
-    if x >= left && x <= right && y >= bottom && y <= top
-      return true
-    else
-      return false
-    end
+    x >= left && x <= right && y >= bottom && y <= top
   end
 end
