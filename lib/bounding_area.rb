@@ -6,11 +6,9 @@ class BoundingArea
   end
 
   def contains_point?(x, y)
-    if x == 0 && y == 0
-      return false
-    end
     boxes.each do |box|
-      return box.contains_point?(x, y)
+      return true if box.contains_point?(x, y)
     end
+    false
   end
 end
