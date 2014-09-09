@@ -1,4 +1,3 @@
-require 'pry'
 class BoundingArea
   def initialize(box_array)
     @box = box_array
@@ -13,4 +12,3 @@ class BoundingArea
     end
   end
 end
-
